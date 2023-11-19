@@ -1,0 +1,91 @@
+<!-- Grid and flexbox. The basic difference between CSS grid layout and CSS flexbox layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-columns: 100px 100px 100px; */
+            /* now we have 3 columns of 100px ,by this we can creat multiple columns  */
+            /* grid-template-rows: 100px 100px; */
+            /* now we created 2 rows of 100px ,by this we can creat n no. of rows  */
+          /* no. of rows are as 1 2  no. of columns is as 1 2 3 */
+          /* we can give names to the rows and colum by below method */
+          /* grid-template-columns: [pehla] 100px [dusra] 100px [tisra] 100px [t]; */
+          /*last line will be name as t*/
+          /* grid-template-rows: [pehla]100px [dusra]100px; */
+          /* grid-template-areas: "nav nav nav"
+                                "main article empty"
+                                "footer footer footer"; */
+                                /* now we have 3 rows/areas ,in first area we have nav nav nav ,in second area we have main aritcle and empty 3 areas ,in thirs row/area we have footer footer footer  */
+        /* fr unit fr=fraction */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* 1fr 1fr 1fr means we created 3 columns each having 1fraction of total width  */
+        grid-template-columns: 1fr 2fr 1fr;
+        /* now the colum 2 will take 2 times of the fraction */
+        /* gap: 30px; */
+        /* give gap btwn rows and columns both  */
+        /* column-gap: 10px; */
+        /* give gap btwn columns  */
+        /* row-gap: 30px; */
+        /* give gap btwn rows  */
+        /* if we use align items and justify items then they will rearrange in there area or shell , for exampel if we use justify-items: end; then the itmes will go at end of there row  */
+justify-items: center;
+align-items: end;
+/* if we use justify content then the whole grid will be shifted along with items in them */
+/* repeat function is used when we have to reapeat something */
+/* grid-template-rows: repeat(4,1fr); */
+/* this will creat 4 rows in 1 1 fraction each */
+grid-template-rows: repeat(4,minmax(100px,1fr));
+
+        }
+        .item{
+            border: 2px solid red;
+            width: 30px;
+            /* if we did not decleare the height and width of the items then they will take the length and breadth of colums and rows size  */
+            height: 30px;
+        }
+        .item1{
+            background-color: rgb(195, 255, 0);
+            /* grid-area: nav ; */
+            /* now the item 1 will take nav area */
+        }
+        .item2{
+            /* grid-column: 2/3; */
+            /* i can also this bye below method */
+            /* grid-column-start: 2; */
+            /* grid-column-end: 3; */
+            grid-row: 1/2;
+            /* grid-area: main; */
+        }
+        .item3{
+            grid-area: empty;
+        }
+        .item4{
+            background-color: #16bdda;
+            /* grid-column: 2/3; */
+            /* grid-column: dusra/tisra; */
+            /* grid-row: pehla/dusra;here we used given name to columns and rows to place the item at our desired position */
+            /* using this we can place the element at our desired position  */
+            /* grid-area: footer; */
+        }
+        .item5{
+            grid-area: article;
+        }
+        /* if i do the same thing in element 2 then element 2 and 4 will overlap */
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+      <div class="item item5">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Image slider</title>
+    <style>
+        body{
+            background-color: #211d1d;
+        }
+        h1{
+            text-align: center;
+            color: aliceblue;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            font-size:x-large;
+        }
+        .maindiv{
+            border: 2px solid white;
+            height: 400px;
+            width: 70vw;
+            position:absolute;
+            left:15vw;
+            background-image: url("https://images.pexels.com/photos/4914160/pexels-photo-4914160.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+            background-size: 100% 100%;
+            box-shadow: 0px 0px 10px 5px white;
+            animation: slider  9s  infinite linear;
+        }
+        @keyframes  slider {
+            0%{ background-image: url("https://images.pexels.com/photos/4914160/pexels-photo-4914160.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+
+            }
+            35%{
+               background-image: url("https://images.pexels.com/photos/8960867/pexels-photo-8960867.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+            }
+           75%{
+background-image: url("https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+           } 
+        }
+    </style>
+</head>
+<body>
+    <h1>Racing Tails The Ultimate Racing </h1>
+    <div class="maindiv">
+
+    </div>
+</body>
+</html>

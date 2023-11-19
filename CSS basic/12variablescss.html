@@ -1,0 +1,47 @@
+<!-- css also have varibles , benifits to use variable is that if we have to
+change some propirty like color opacity padding margin etc. can be stored by making 
+global variables and can be cahanged at once for all elements in which This
+ propirty is used  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color: rgb(133, 231, 14);
+            --seccolor: rgb(107, 237, 180);
+            --defpad: 12px;
+            --defop: 0.7;/*for opacity*/
+        }
+        /* used to declare global variable */
+      .nav{
+        list-style: none;
+        display: flex;
+        background-color: var(--color);/*var function used to use variables*/
+      }  
+      ul li{
+        padding:var(--defpad);/*here we used defpad variable for padding*/
+      }
+      ul li:first-child{
+        opacity: var(--defop);/*used for the opacity of the element*/
+        --color: rgb(40, 225, 40);/*local variable work only  inside this bloack/two curly braces*/
+        background-color: var(--color,blue);/*if variable is not found then we can use an addition color along with the variable if that variable is not found then the other color will be shown*/}
+        p {
+            background-color: var(--seccolor)
+        }
+      
+
+    
+    </style>
+ </head>
+ <body>
+    <div>
+        <ul class="nav"><li>Home</li>
+        <li>About</li>
+    <li>Contact</li></ul>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reiciendis porro vel ipsam, facilis suscipit aspernatur voluptatem quos rerum consequuntur distinctio quasi? Dolorum perferendis at harum tempore hic tempora modi, eos vitae nulla. Sed veniam recusandae eum id dicta? Quas maxime rem a veritatis ab?</p>
+ </body>
+ </html>

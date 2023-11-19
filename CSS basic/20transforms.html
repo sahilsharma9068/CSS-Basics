@@ -1,0 +1,61 @@
+<!-- transforms are used to change the angle along x y z axis of the element  -->
+<!-- 2D transformation used to transform the element along x and y axis  -->
+<!-- 3D transformation used to tranform the element along x , y and z axis  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Css transform</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            margin-left: 100px;
+            background-color: #a58080;
+            display: flex;
+            justify-content: center;  
+            align-items: center; 
+        /* transform: rotate(43deg); */
+    /* this will rotate the box by 43deg */
+      /* transform:rotate(0.23turn);         */
+      /* this will rotate the box by 0.23 times part of 360 degree  */
+      /* transform: rotateX(43deg); */
+      /* this will rotate the box by 43 degree along x axis means tilt at the x axis at the side of z axis */
+      /* if we do angle 90 degree than box will dispear bcz now the box has lied in x z plan and z axis is inside the screeb */
+      /* transform: rotateY(43deg); */
+      /* rotate the box along y axis  */
+      /* transform: rotateZ(43deg); */
+      /* rotate along z axis  */
+      /* transform: scale(1.6); */
+      /* this will scale the box 1.6 times of original size  */
+      /* transform: skew(23deg); */
+      /* transform: skewX(23deg); */
+      /* transform: skewY(23deg); */
+      /* skew which is nor parallel nor at right angle an in thsi we see corners like they are streched */
+      /* transform: translate(34px); */
+      /* this will move the elements by 34px */
+      /* transform: translate(100%, 100%); */
+      /* this will move/translate the elements in x and y direction 50% means move 50% of size of the element */
+      /* transform: translateY(56px); */
+      /* translate in y direction  */
+      /* if we want to use multiple tranfrom property at a time then we can use by giving space btwn the  */
+      /* transform: rotate(34deg) translate(34px) scale(1.2) skew(13deg) ; */
+      /* transform: translate(-100%); */
+      /* will move in negative direction means outside of the screen  */
+      /* transform origin property is used to tranform the origin of rotation or anything defaulty it is set as center of the box but we can change it using transform origin   */
+      /* transform-origin: 100% 0%; */
+       /* default it is set as -50% -50% , now the origin has changed and now the box will rotate along the right upper corner*/
+       transform: rotate(60deg);
+}
+    </style>
+</head>
+<body>
+    <div class="box b1">Box1</div>
+    <div class="box b2">Box2</div>
+    <div class="box b3">Box3</div>
+    <div class="box b4">Box4</div>
+    <div class="box b5">Box5</div>
+</body>
+</html>

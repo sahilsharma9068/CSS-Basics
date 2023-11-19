@@ -1,0 +1,30 @@
+<!-- over flow is used when the text is overflowed to fix that we use overflow propertise -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .over{
+            border: solid;
+            width: 30vw;
+            height: 30vw;
+            /* overflow: auto;overflow auto add scroll bar if text is overflowed */
+            /* white-space: nowrap; used not to wrap the text to */
+            text-overflow: scroll;/*used if we have to show scroll bar if the text are overflowed or not it does not matter*/
+            text-overflow: ellipsis;/*used to show 3 dots where the text starts overflowing and the overflowed content is not showen*/
+            /* overflow: clip; it will remove the horizotnal bars */
+            /* if text is overflowing in both the direction in x and also in y and we are getting two scroll bars due to auto overflow propertiy , the use can use overflow-x and overflow-y for and use hidden whoses axis scroll bar you want to hide */
+            /* use also can use at same time for x and y axis then first will be x and second will be -ms-scroll-snap-points-y: ; */
+            /* overflow: hidden scroll; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="over">I prefer to use Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus quisquam, similique dolore iure eius odit veniam excepturi asperiores velit. Quo consequatur, dolorem inventore exercitationem officia commodi assumenda cum, quod quas quibusdam ad dicta voluptates?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eos magnam vel perspiciatis deserunt quas, quo voluptas explicabo molestiae voluptatem architecto similique vero neque ut? Labore sapiente soluta saepe, ut corporis animi corrupti modi enim debitis odio, necessitatibus perspiciatis porro magni eveniet exercitationem. Dolore tenetur eligendi nemo cumque harum rerum esse minus ullam, fuga culpa sed.
+
+    </div>
+</body>
+</html>

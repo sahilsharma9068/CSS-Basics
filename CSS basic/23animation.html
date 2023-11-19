@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container {
+            height: 400px;
+            width: 300px;
+            background-color: #89ca1a;
+        }
+
+        .box {
+            height: 34px;
+            width: 43px;
+            background-color: #1beaee;
+            text-align: center;
+            /* animation-name: sahilAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse; */
+            /* animation-play-state: running; we can use pasued also */
+            /* shorthand for animation */
+            /* animation: sahilAnimation 3s ease-in-out infinite 2s alternate-reverse; */
+            /* we can use two animation at a time on same element */
+            animation: sahilAnimation 3s ease-in-out infinite 2s alternate-reverse, sahil2 3s ease-in-out infinite 2s alternate-reverse;
+        }
+
+        @keyframes sahilAnimation {
+            from {}
+
+            to {
+                transform: translateY(3000px);
+            }
+        }
+
+        @keyframes sahil2 {
+            0% {}
+
+            20% {
+                transform: rotate(43deg);
+            }
+
+            30% {
+                transform: rotate(60deg);
+            }
+
+            60% {
+                transform: rotate(200deg);
+            }
+
+            80% {
+                transform: rotate(300deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!-- here we see how we can style the lists -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    nav ul li {
+      background-color: yellow;
+      border: 3px solid black;
+      margin: 8px;
+      display: list-item;
+      /* this is defaulty set diplay setting for lists if we change it the list property will alos changed */
+      /* using this  display: block; , display:flex; or display:inline; the list property will change */
+      list-style: circle;
+      /* list-style-position: inside; */
+      /* inisitaly the marker(symbol) of the list is onutside the content by using list styel position inside we can take contetn and symbol together */
+      list-style: square inside;
+      /* we can use both together */
+    }
+
+    .list2 {
+      list-style: "✨";
+    }
+
+
+
+    footer ul li {
+      border: dashed;
+      padding: 2px;
+      margin: 3px;
+      list-style: inside url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAACNCAMAAAC9gAmXAAAAZlBMVEX///8AAAC3t7fg4OC6urqSkpKEhISPj497e3vj4+OoqKiAgICJiYkkJCT4+PjT09OcnJzp6elBQUHv7+/CwsJzc3NTU1NfX1/Z2dkWFhYpKSkQEBBZWVnLy8s0NDSurq5nZ2dISEhpQ8P0AAADN0lEQVR4nO3b2ZKqMBQFUCKoCDIoIKjt9P8/2V5bMSEnEEIGbtXZjzbiKjpziOdhMBgMBoPBYKxlEyxsJtj0WLJDQuwmOWQiTGSZ8pcIxuROMITkEGbnCEPIDtDEzjQxjyn2zjT7gtNsnGEI4eu571Dj92lOeWA+eSKnCaEaZyChjObElykzKY4SmpUljOdVEpqlNU2IGtT8H5q0WYT1T70u+ebfvqasP/dNqsaxxmcHBhXbsFrWBEfC5sD8rl1NSbgk9DjPqqbhMc+nQ/2zbGrSA6Shb29TI5gPnb81y6amW4I/WbvQgKXmFReatVDT/nbMfWJMU8GUZ272NWkNU+gfmIWmLcaz0Dh4Nj3lZuFAM686JZxJn9tLLGo80aLd9/4ri5oFjEm+I1KbmvQH1FDrajY1gvFNakDTLOtDfBm4KOMxewqjTZOfX5dWA8sZJTcuZqYxmjRty/ZI+y/csS3ylv2rHg01qrsPcLxL/anp17D7o1o0zFTgPmj3g2UcxlHJrwrr0HSqSjXIEUaDJr12Sua6/3qjGmCkoNxATddA6/+33m8Y1MCdz6LvK+Y0wMz6ldKFxheNEo7CHThzmqJbnb45d1eKzGvuQszz6fCN2y6vltBGWJvtFM0KdrzDbTJFr54V3CbUoLn1Yp79ENNlpR97D2eCBhisdFJTHKqRFLdG6hqZPdhvh+7T5V3IUdYUDwlNu7N1YSufaIyorBHPHJlUr6fTLWGi1khV01+d6Kxu0Yn7UNAaKWoCaYwgCdjuqGlEvdOInCCOkmbHP/rxuQIDaBVN+tCAIeSH56hoJKvTMEeHRt97MNw+e7vEI62ZXJ2odN8lGa3Jzho13enFWE2h+T0u9q2okZoCXoLRxRmpCeFbTkmprBEva+rhjNJo6BCAJJmSphFtME2Nr6ApTGHItRmvEe8TTOekYzW6eicw79mOtMbwK6N/0wtZzcUs5t2hS2oy8y/2/lugW0ppuMU0E4llNfAmv+5spTT5Fv629kTtQK5HY+9l8LZA9L4naj2oQQ1qUIMa1KBGXTOvczDzOiM0r/NTMztbNq9zdzM7kziz85revM6yYjAYDAaDwWA05xfJ1DwR53db5gAAAABJRU5ErkJggg==");
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <ul class="list1">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contacts</li>
+    </ul>
+  </nav>
+  <ul class="list2">
+    <li>You can click on this for more</li>
+    <li>You can list music by tapping on this</li>
+    <li>You can also share it</li>
+  </ul>
+  <footer>
+    <ul>
+      <li>Here you can end</li>
+      <li>You can also continue from here</li>
+      <li>Thanks for visiting</li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>

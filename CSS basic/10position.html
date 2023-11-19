@@ -1,0 +1,111 @@
+<!-- position  proprity are used to adjust the elements position  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .box {
+            /*initialy/default the position of the elements is static we channge the position type to absolute,sticky,fixed etc. */
+            /* position: static; */
+            /* Static positioned elements are not affected by the top, bottom, left, and right properties. */
+            position: relative;
+            /* will position the element relative to the view port  */
+            border: 2px solid black;
+            margin: 0;
+            padding: 0;
+            height: 20vw;
+            width: 70vw;
+        }
+
+        .box1 {
+            background-color: aqua;
+            position: relative;
+            left: 5px;
+            top: 10px;
+            text-align: center;
+        }
+
+        .box2 {
+            background-color: blue;
+            position: relative;
+            bottom: 50px;
+            left: 15px;
+            text-align: center;
+        }
+
+        .box3 {
+            background-color: red;
+            position: relative;
+            bottom: 100px;
+            left: 25px;
+            text-align: center;
+        }
+
+        .box4 {
+            background-color: yellow;
+            position: relative;
+            bottom: 150px;
+            left: 35px;
+            text-align: center;
+        }
+
+        .parent {
+            border: 4px solid black;
+            margin: 20px;
+            padding: 20px;
+            width: 80vw;
+            height: 2000px;
+            align-items: center;
+        }
+
+        .fix {
+            border: 2px solid;
+            background-color: brown;
+            color: yellow;
+            text-align: center;
+            position: fixed;
+            bottom: 20px;
+            width: 50vw;
+            left: 25vw;
+        }
+
+        .stik {
+            border: 2px solid;
+            border-radius: 20px;
+            text-align: center;
+            background-color: black;
+            color: yellow;
+            position: sticky;
+            top: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stik">Below are the steps one by one</div>
+    <div class="parent">
+        <div class="box box1">Step for 1st project<br>Step:1</div>
+        <div class="box box2">Step:2</div>
+        <div class="box box3">Step:3</div>
+        <div class="box box4">step:4</div>
+        <div class="box box1">Step for next project<br>Step:1</div>
+        <div class="box box2">Step:2</div>
+        <div class="box box3">Step:3</div>
+        <div class="box box4">step:4</div>
+    </div>
+    <div class="fix">Contact on:9306999694</div>
+</body>
+
+</html>
+<!-- static	Default value. Elements render in order, as they appear in the document flow	
+absolute	The element is positioned relative to its first positioned (not static) ancestor element	
+fixed	The element is positioned relative to the browser window	
+relative	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position	
+sticky	The element is positioned based on the user's scroll position
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+Note: Not supported in IE/Edge 15 or earlier. Supported in Safari from version 6.1 with a -webkit- prefix. -->

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #fffbb7;
+        }
+
+        nav {
+            padding: 0px;
+            margin: 0px;
+            position: sticky;
+            top: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0px 0px 0px 10px;
+            margin: 0px 0px 0px 0px;
+            background-color: rgb(47, 227, 15);
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px 3px rgb(0, 191, 255);
+
+        }
+
+        nav ul li {
+            padding: 7px 14px;
+            margin: 5px;
+            border: 1px solid;
+            border-radius: 20px;
+            background-color: rgb(108, 219, 108);
+            color: rgb(67, 31, 81);
+        }
+
+        .content {
+            display: flow-root;
+            border: 2px solid;
+            margin: 9px;
+            height: 330px;
+            background-color: rgb(131, 254, 211);
+        }
+
+        .content h1 {
+            display: inline;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        .content p {
+            display: inline;
+            margin: 6px;
+            padding: 3px;
+            text-decoration: wavy;
+            text-size-adjust: 8px
+        
+        }
+
+        .imgname {
+            display: inline;
+            border: 2px solid;
+            border-radius: 6px;
+            margin: 5px;
+            padding: 5px;
+
+        }
+
+        #parent {
+            border: 2px solid;
+            width: 300px;
+            height: 410px;
+            border-radius: 30px;
+            margin: 0px 3px 9px 2px;
+            padding: 20px;
+            background-color: rgb(0, 132, 255);
+        }
+
+        #imagesr {
+            display: block;
+            border: 5px;
+            border-radius: 30px;
+            position: relative;
+            box-shadow: 1px 1px 11px 8px rgb(255, 0, 136);
+        }
+
+        .img {
+            position: relative;
+            top: 15px;
+            background-color: rgb(0, 255, 195);
+        }
+
+        .dw {
+            position: relative;
+            top: 15px;
+            left: 90px;
+            background-color: rgb(240, 106, 193);
+        }
+
+        #h {
+            position: relative;
+            top: 5px;
+        }
+
+        #p {
+            position: relative;
+            left: 3px;
+        }
+
+        #rd {
+            border: 2px solid;
+            display: inline;
+            background-color: rgb(243, 255, 7);
+            border-radius: 20px;
+            position: relative;
+            left: 110px;
+            bottom: 5px;
+            padding: 3px;
+        }
+
+        button:hover {
+            background-color: rgb(218, 218, 121);
+            color: aqua;
+        }
+
+        main {
+            display: flex;
+        }
+
+        #img2 {
+            padding: 0px 0px 0px 2px;
+            margin: 2px 0px 0px 0px;
+            height: 200px;
+            width: 600px;
+        }
+
+        footer {
+            position: fixed;
+            border: 2px solid black;
+            bottom: 2px;
+            background-color: black;
+            width: 100vw;
+            text-align: center;
+            border-radius: 5px;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li>Home</li>
+            <li>Courses</li>
+            <li>Books</li>
+            <li>Tutorials</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>New way to learn:</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quisquam voluptatum cum quas at doloremque
+            esse accusantium, alias aperiam, provident omnis molestiae vel! Eos ex debitis amet excepturi iusto
+            blanditiis, dicta enim nostrum veritatis animi ipsa maiores minima quas rerum velit voluptate laborum
+            isteconsequatur.</p>
+        <img id="img2"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3EZDSL0UrQxfBligTJt5v2hnzZXfSZGs9d9L7SjrGINfMIIj0BZGeXEiBj-qhRRt_Erc&usqp=CAU"
+            alt="">
+    </div>
+    <main>
+        <div id="parent">
+            <img src="spaceimage.jpg" width="300px" height="200px" alt="spaceimage" id="imagesr">
+            <div class="imgname img">Space Image</div>
+            <div class="imgname dw">Download</div>
+            <h2 id="h">About the image:</h2>
+            <p id="p">This image shows different type of planate and there size it
+                compares there size along with that lightnig effects are also added
+                to make the image more beautiful, you can download this image in free<br>
+                THANKS FOR WISITING...
+            </p>
+            <di><button id="rd">Read more..</button>
+        </div>
+        </div>
+        <div id="parent">
+            <img src="https://i.pinimg.com/236x/67/5f/25/675f257a17ab1f34f437327c84d4a63f.jpg" width="300px"
+                height="200px" alt="spaceimage" id="imagesr">
+            <div class="imgname img">Space Image</div>
+            <div class="imgname dw">Download</div>
+            <h2 id="h">About the image:</h2>
+            <p id="p">This image shows different type of planate and there size it
+                compares there size along with that lightnig effects are also added
+                to make the image more beautiful, you can download this image in free<br>
+                THANKS FOR WISITING...
+            </p>
+            <div><button id="rd">Read more..</button></div>
+        </div>
+        <div id="parent">
+            <img src="https://i.pinimg.com/736x/e0/bf/8a/e0bf8ad46a57307cdd6c3d0cda63b1dd.jpg" width="300px"
+                height="200px" alt="spaceimage" id="imagesr">
+            <div class="imgname img">Space Image</div>
+            <div class="imgname dw">Download</div>
+            <h2 id="h">About the image:</h2>
+            <p id="p">This image shows different type of planate and there size it
+                compares there size along with that lightnig effects are also added
+                to make the image more beautiful, you can download this image in free<br>
+                THANKS FOR WISITING...
+            </p>
+            <div><button id="rd">Read more..</button></div>
+        </div>
+    </main>
+    <footer>
+        <div>To get mentors detail contact:8570845920</div>
+    </footer>
+
+</body>
+
+</html>

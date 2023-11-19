@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Selectors</title>
+    <style>
+        /* Theory of this selectors is in notes */
+        /* ID selector */
+        #Mydiv {
+            background-color: aqua;
+            color: rgb(217, 11, 35);
+        }
+
+        /* Class selector */
+        .divs {
+            background-color: rgb(120, 131, 139);
+        }
+
+        /* Child selector */
+        div>p {
+            background-color: rgb(14, 244, 171);
+        }
+
+        /* Decendant selector */
+        div ul {
+            background-color: rgb(244, 161, 6);
+        }
+
+        /* Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo selector */
+        a:visited {
+            color: rgb(103, 225, 16)
+        }
+
+        a:active {
+            background-color: blueviolet;
+        }
+        a:hover{
+            background-color: brown;
+        }
+        h4:first-child{
+            background-color: rgb(245, 138, 8);
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="Mydiv">I am 1st div</div>
+    <div class="divs">I am 2nd div</div>
+    <div class="divs">I am 3rd div</div>
+    <div>
+        <p>I am a child paragraph of div </p>
+        <article>This is an articel</article>
+    </div>
+    <div>
+        <span> I am a span <ul>
+                <li> I am a child li of span and span is child of div</li>
+            </ul></span>
+    </div>
+    <a href="http://www.google.com">Go to Google</a>
+  <pre><h4>This is a heading</h4>
+         <h4>This is another heading</h4></pre> 
+</body>
+
+</html>

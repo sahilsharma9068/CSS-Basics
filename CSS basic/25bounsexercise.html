@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouns</title>
+    <style>
+        .bakgrnd{
+            background-color: skyblue;
+            height:50vh;
+            width: 100vw;
+            width: auto;
+             position: relative;
+             
+             
+        }
+        .ball{
+            position:absolute;
+            bottom: 0;
+             left: 0;
+            background-color: greenyellow;
+            height: 35px;
+            width: 35px;
+            border-radius: 100px;
+            animation:  bounsx  5s linear infinite , bounsy 1s ease-out  infinite alternate;
+
+             
+        }
+        @keyframes  bounsx {
+             from{
+                left: 0;
+             }
+            to{
+                left: 95%;
+            }
+            }
+            @keyframes  bounsy {
+                from{
+                    bottom: 0;
+                }
+                to{
+                    bottom: 90%;
+                }
+                
+            }
+ 
+    </style>
+</head>
+<body>
+    <div class="bakgrnd">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

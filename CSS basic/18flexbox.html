@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 80vw;
+            border: 2px solid black;
+            /* justify-content — controls alignment of all items on the main axis. 
+            align-items — controls alignment of all items on the cross axis.  */
+            /* main axis is the axis which along which itmes are flex and cross axis is the axis perpendicular to the main axis  */
+            display: flex;/*Now we can use the properites of flex box*/
+             /* justify-content: center;  */
+            /* keep the content on center of the container */ 
+             /* justify-content: end; */
+              /* keep the content at the end along main axis */
+            /* align-items: center; */
+            /* align-content: center; */
+            /* align the whole content at the center  */
+            /* justify-content: space-around; */
+            /* creat space around the items */
+            /* justify-content: space-between; */
+            /* justify-content:baseline; */
+            /* adjust the itmes according to base line used when items are different in size */
+            /* creat space btwn the items */
+            /* align-items:end;  */
+            /* keep the items at end along cross axis    } */
+           /* Flex direction defaulty set left to right but we can change it using flex direction properties */
+           /* flex-direction: column; */
+           /* make the flex direction along colums  */
+           /* flex-direction: column-reverse; */
+           /* make the flex direction along colum and reverse the elements */
+           /* flex-direction: row-reverse; */
+           /* make the flex direction along row and reverse the itmes */
+           /* when we have to many items which do not fit inside container and start overflowing then we use wrap property of flex which will wtap the itmes */
+            /* flex-wrap:wrap; */
+            /* this will wrap the items  */
+            /* flex-wrap: wrap-reverse; */
+            /* wrap the itmes in reverse order */
+            flex-flow: row wrap;/* first we initilize the flex direction and than flow can use both at a time*/
+            /* gap: 30px; */
+            /* creat horizontaly and verticaly a gap of 30px btwn items   */
+            /* row-gap: 1px; */
+            /* creats a gap of 10px btwn columns  */
+            /* column-gap: 30px; */
+            /* creats a gap of 30px btwn colums  */
+            gap: 10px 40px;
+            /* first row gap then colum gap will be assigned*/
+        }
+        .item{
+            background-color: red;
+            border: 2px solid black;
+            height: 20px;
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+         
+    </div>
+</body>
+</html>
